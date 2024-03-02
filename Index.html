@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slack Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="">
+                <img src="Images/slack.png" alt="slack logo" loading="lazy">
+                <span>Slack</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown">Features</a>
+                        <div class="dropdown-menu">
+                            <div class="row p-3">
+                                <div class="col-sm-12 col-md-3">
+                                    <h3>Collaboration</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <p class="mb-0">Channels</p>
+                                                <p>Organise teams and works</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p class="mb-0">Slack connect</p>
+                                                <p>Work with external partners</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p class="mb-0">Messaging</p>
+                                                <p>Chat with your team</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p class="mb-0">Huddle</p>
+                                                <p>Meet using audio and video</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p class="mb-0">Clips</p>
+                                                <p>Records and share updates</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-12 col-md-3">
+                                    <h3>Automation</h3>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <ul>
+                                                <li>
+                                                    <a href="">
+                                                        <p class="mb-0">Workflow builder</p>
+                                                        <p>Automate everyday tasks</p>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-4">
+                                                    <a href="">
+                                                        <p class="mb-0">Apps & Integrations</p>
+                                                        <p>Bring your tools to slack</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12">
+                                            <h3>Knowledge</h3>
+                                            <ul>
+                                                <li>
+                                                    <a href="">
+                                                        <p class="mb-0">Search</p>
+                                                        <p>Seek shared knowledge</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <p class="mb-0">Canvas</p>
+                                                        <p>Create rich, flexible docs</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <p class="mb-0">File sharing</p>
+                                                        <p>Bring files into the flow of work</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-3">
+                                    <h3>Enterprise platform </h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <p class="mb-0">Security</p>
+                                                <p>Protect data, ensure compliance</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p class="mb-0">Enterprise Key Management</p>
+                                                <p>Monitor and revoke access</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p class="mb-0">Slack Atlas</p>
+                                                <p>Discover rich profiles and org charts</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-12 col-md-3">
+                                    <h3>Featured</h3>
+                                    <img class="featured-image" src="Images/dropdown_image.png"
+                                        alt="girl with binoculars" loading="lazy">
+                                    <p>Power productivity with all-new innovations in Slack</p>
+                                    <a class="text-black" href="#">Read announcement</a>
+                                    <hr>
+                                    <ul>
+                                        <li class="mb-2"><a href="">What is Slack?</a></li>
+                                        <li class="mb-2"><a href="">Slack vs email</a></li>
+                                        <li><a href="">Accessibility</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown ms-2">
+                        <a class="nav-link dropdown-toggle" href="" role="button"
+                            data-bs-toggle="dropdown">Solutions</a>
+                        <div class="dropdown-menu">
+                            <div class="row p-3">
+                                <div class="col-sm-12 col-md-3">
+                                    <h3>By department</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <p>Engineering</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p>IT</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p>Customer Service</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p>Sales</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p>Project Management</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p>Marketing</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p>Human Resources</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p>Security</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-12 col-md-3">
+                                    <h3>By industry</h3>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <ul>
+                                                <li>
+                                                    <a href="">
+                                                        <p class="">Technology</p>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-4">
+                                                    <a href="">
+                                                        <p>Media</p>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-4">
+                                                    <a href="">
+                                                        <p>Small business</p>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-4">
+                                                    <a href="">
+                                                        <p>Financial services</p>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-4">
+                                                    <a href="">
+                                                        <p>Retail</p>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-4">
+                                                    <a href="">
+                                                        <p>Public sector</p>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-4">
+                                                    <a href="">
+                                                        <p>Education</p>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-4">
+                                                    <a href="">
+                                                        <p>Health and life sciences</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-3">
+                                </div>
+                                <div class="col-sm-12 col-md-3">
+                                    <h3>Featured</h3>
+                                    <img class="featured-image" src="Images/dropdown_image_2.png"
+                                        alt="person typing on laptop" loading="lazy">
+                                    <p>How OpenAI connects customers and expands ChatGPT with Slack</p>
+                                    <a class="text-black" href="#">Read story</a>
+                                    <hr>
+                                    <ul>
+                                        <li class="mb-2"><a href="">Task management</a></li>
+                                        <li class="mb-2"><a href="">Scale</a></li>
+                                        <li><a href="">Engagement</a></li>
+                                        <li><a href="">Trust</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="">Enterprise</a>
+                    </li>
+                    <li class="nav-item dropdown ms-2">
+                        <a class="nav-link dropdown-toggle" href="" role="button"
+                            data-bs-toggle="dropdown">Resources</a>
+                        <div class="dropdown-menu">
+                            <div class="row p-3">
+                                <div class="col-sm-12 col-md-3">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <p>Resources library</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p>Events</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p>Customer stories</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p>Blog</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-12 col-md-3">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <ul>
+                                                <li>
+                                                    <a href="">
+                                                        <p class="">What's new</p>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-4">
+                                                    <a href="">
+                                                        <p>Developers</p>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-4">
+                                                    <a href="">
+                                                        <p>Community</p>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-4">
+                                                    <a href="">
+                                                        <p>App directory</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-3">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <p class="">Watch the demo</p>
+                                            </a>
+                                        </li>
+                                        <li class="mb-4">
+                                            <a href="">
+                                                <p>Partners</p>
+                                            </a>
+                                        </li>
+                                        <li class="mb-4">
+                                            <a href="">
+                                                <p>Slack certified</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-12 col-md-3">
+                                    <h3>Featured</h3>
+                                    <img class="featured-image" src="Images/dropdown_image_3.png" alt="dreamforce"
+                                        loading="lazy">
+                                    <p>Discover the future of AI at Dreamforce 2023!</p>
+                                    <a class="text-black" href="#">Watch on demand</a>
+                                    <hr>
+                                    <ul>
+                                        <li class="mb-2"><a href="">Help Centre</a></li>
+                                        <li class="mb-2"><a href="">Customer support</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" href="">Pricing</a>
+                    </li>
+                </ul>
+                <form class="d-flex align-items-center">
+                    <span><i class='bx bx-search mx-4 mt-2 text-white'></i></span>
+                    <a class="me-4" href="">Sign in</a>
+                    <button class="btn btn-outline-primary text-white px-3" type="button">TALK TO SALES</button>
+                    <button class="btn btn-light ms-4" type="button">TRY FOR FREE</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sticky navbar after scroll -->
+
+    <nav class="navbar navbar-expand-lg sticky-nav">
+        <div class="container mt-1 px-4">
+            <a class="navbar-brand d-flex align-items-center" href="">
+                <img src="Images/slack.png" alt="slack logo" loading="lazy">
+                <span>Slack</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle text-black" href="" role="button"
+                            data-bs-toggle="dropdown">Features</a>
+                        <div class="dropdown-menu">
+                            <div class="row p-3">
+                                <div class="col-sm-12 col-md-3">
+                                    <h3>Collaboration</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <p class="mb-0">Channels</p>
+                                                <p>Organise teams and works</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p class="mb-0">Slack connect</p>
+                                                <p>Work with external partners</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p class="mb-0">Messaging</p>
+                                                <p>Chat with your team</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p class="mb-0">Huddle</p>
+                                                <p>Meet using audio and video</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p class="mb-0">Clips</p>
+                                                <p>Records and share updates</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-12 col-md-3">
+                                    <h3>Automation</h3>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <ul>
+                                                <li>
+                                                    <a href="">
+                                                        <p class="mb-0">Workflow builder</p>
+                                                        <p>Automate everyday tasks</p>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-4">
+                                                    <a href="">
+                                                        <p class="mb-0">Apps & Integrations</p>
+                                                        <p>Bring your tools to slack</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12">
+                                            <h3>Knowledge</h3>
+                                            <ul>
+                                                <li>
+                                                    <a href="">
+                                                        <p class="mb-0">Search</p>
+                                                        <p>Seek shared knowledge</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <p class="mb-0">Canvas</p>
+                                                        <p>Create rich, flexible docs</p>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="">
+                                                        <p class="mb-0">File sharing</p>
+                                                        <p>Bring files into the flow of work</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-3">
+                                    <h3>Enterprise platform </h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <p class="mb-0">Security</p>
+                                                <p>Protect data, ensure compliance</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p class="mb-0">Enterprise Key Management</p>
+                                                <p>Monitor and revoke access</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p class="mb-0">Slack Atlas</p>
+                                                <p>Discover rich profiles and org charts</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-12 col-md-3">
+                                    <h3>Featured</h3>
+                                    <img class="featured-image" src="Images/dropdown_image.png"
+                                        alt="girl with binoculars" loading="lazy">
+                                    <p>Power productivity with all-new innovations in Slack</p>
+                                    <a class="text-black" href="#">Read announcement</a>
+                                    <hr>
+                                    <ul>
+                                        <li class="mb-2"><a href="">What is Slack?</a></li>
+                                        <li class="mb-2"><a href="">Slack vs email</a></li>
+                                        <li><a href="">Accessibility</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown ms-2">
+                        <a class="nav-link dropdown-toggle text-black" href="" role="button"
+                            data-bs-toggle="dropdown">Solutions</a>
+                        <div class="dropdown-menu">
+                            <div class="row p-3">
+                                <div class="col-sm-12 col-md-3">
+                                    <h3>By department</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <p>Engineering</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p>IT</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p>Customer Service</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p>Sales</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p>Project Management</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p>Marketing</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p>Human Resources</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p>Security</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-12 col-md-3">
+                                    <h3>By industry</h3>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <ul>
+                                                <li>
+                                                    <a href="">
+                                                        <p class="">Technology</p>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-4">
+                                                    <a href="">
+                                                        <p>Media</p>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-4">
+                                                    <a href="">
+                                                        <p>Small business</p>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-4">
+                                                    <a href="">
+                                                        <p>Financial services</p>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-4">
+                                                    <a href="">
+                                                        <p>Retail</p>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-4">
+                                                    <a href="">
+                                                        <p>Public sector</p>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-4">
+                                                    <a href="">
+                                                        <p>Education</p>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-4">
+                                                    <a href="">
+                                                        <p>Health and life sciences</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-3">
+                                </div>
+                                <div class="col-sm-12 col-md-3">
+                                    <h3>Featured</h3>
+                                    <img class="featured-image" src="Images/dropdown_image_2.png"
+                                        alt="person using laptop" loading="lazy">
+                                    <p>How OpenAI connects customers and expands ChatGPT with Slack</p>
+                                    <a class="text-black" href="#">Read story</a>
+                                    <hr>
+                                    <ul>
+                                        <li class="mb-2"><a href="">Task management</a></li>
+                                        <li class="mb-2"><a href="">Scale</a></li>
+                                        <li><a href="">Engagement</a></li>
+                                        <li><a href="">Trust</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link text-black" href="">Enterprise</a>
+                    </li>
+                    <li class="nav-item dropdown ms-2">
+                        <a class="nav-link dropdown-toggle text-black" href="" role="button"
+                            data-bs-toggle="dropdown">Resources</a>
+                        <div class="dropdown-menu">
+                            <div class="row p-3">
+                                <div class="col-sm-12 col-md-3">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <p>Resources library</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p>Events</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p>Customer stories</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <p>Blog</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-12 col-md-3">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <ul>
+                                                <li>
+                                                    <a href="">
+                                                        <p class="">What's new</p>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-4">
+                                                    <a href="">
+                                                        <p>Developers</p>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-4">
+                                                    <a href="">
+                                                        <p>Community</p>
+                                                    </a>
+                                                </li>
+                                                <li class="mb-4">
+                                                    <a href="">
+                                                        <p>App directory</p>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-3">
+                                    <ul>
+                                        <li>
+                                            <a href="">
+                                                <p class="">Watch the demo</p>
+                                            </a>
+                                        </li>
+                                        <li class="mb-4">
+                                            <a href="">
+                                                <p>Partners</p>
+                                            </a>
+                                        </li>
+                                        <li class="mb-4">
+                                            <a href="">
+                                                <p>Slack certified</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-12 col-md-3">
+                                    <h3>Featured</h3>
+                                    <img class="featured-image" src="Images/dropdown_image_3.png" alt="dreamforce"
+                                        loading="lazy">
+                                    <p>Discover the future of AI at Dreamforce 2023!</p>
+                                    <a class="text-black" href="#">Watch on demand</a>
+                                    <hr>
+                                    <ul>
+                                        <li class="mb-2"><a href="">Help Centre</a></li>
+                                        <li class="mb-2"><a href="">Customer support</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link text-black" href="">Pricing</a>
+                    </li>
+                </ul>
+                <form class="d-flex align-items-center">
+                    <span><i class='bx bx-search mx-4 mt-2 text-black'></i></span>
+                    <a class="me-4 text-black" href="">Sign in</a>
+                    <button class="btn btn-outline-primary text-black px-3" type="button">TALK TO SALES</button>
+                    <button class="btn btn-light text-white ms-4" type="button">TRY FOR FREE</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="header-text">
+                        <h1 class="mb-0">Made for people.</h1>
+                        <span>Built for productivity.</span>
+                        <p>Connect the right people, find anything that you need and automate the rest.
+                            That’s work in
+                            Slack, your productivity platform.</p>
+                        <div class="signup-btns">
+                            <button class="btn btn-light py-3 px-4 mt-2 me-2">SIGN UP WITH EMAIL ADDRESS</button>
+                            <button class="btn btn-primary mt-2 py-3"> <img src="Images/search.png" alt=""
+                                    loading="lazy"> SIGN UP WITH
+                                GOOGLE</button>
+                            <p class="mt-3"><strong>Slack is free to try for as long as you like</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <video
+                        src="https://a.slack-edge.com/ec3a92a/marketing/img/homepage/true-prospects/animations/mp4/ia4-hero-product-ui.IN.mp4"
+                        poster="https://a.slack-edge.com/ec3a92a/marketing/img/homepage/true-prospects/animations/static/ia4-hero-product-ui.IN.jpg"
+                        autoplay loop="" muted="" playsinline=""></video>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="section-1" class="section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <p>Trusted by companies all over the world</p>
+                </div>
+                <div class="col-12 mt-4">
+                    <img class="" src="Images/logo-seek.png" alt="seek logo" loading="lazy">
+                    <img class="" src="Images/logo-xero.png" alt="xero logo" loading="lazy">
+                    <img class="" src="Images/rea.png" alt="rea group logo" loading="lazy">
+                    <img class="" src="Images/rmit.png" alt="rmit university logo" loading="lazy">
+                    <img class="" src="Images/logo-ibm.png" alt="imb logo" loading="lazy">
+                    <img class="" src="Images/deliveroo.png" alt="deliveroo logo" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-2" class="section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-6">
+                    <video
+                        src="https://a.slack-edge.com/445abcc/marketing/img/homepage/e2e-prospects/animations/webm/speed.IN.webm"
+                        autoplay loop="" muted="" playsinline=""></video>
+                </div>
+                <div class="col-sm-12 col-md-6 align-self-center">
+                    <div class="section-2-text">
+                        <h2>Move faster with your tools in one place</h2>
+                        <p>Automate away routine tasks with the power of generative AI and simplify your workflow with
+                            all
+                            your favourite apps ready to go in Slack.</p>
+                        <a href="#">Learn more about the Slack platform</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-3" class="section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-6">
+                    <div class="section-3-text">
+                        <h2>Choose how you want to work</h2>
+                        <p>In Slack, you’ve got all the flexibility to work when, where and how it’s best for you. You
+                            can easily chat, send audio and video clips, or join a huddle to talk things through live.
+                        </p>
+                        <a href="#">Learn more about flexible communication</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <video
+                        src="https://a.slack-edge.com/ec3a92a/marketing/img/homepage/true-prospects/animations/webm/ia4-flexibility.IN.webm"
+                        autoplay loop="" muted="" playsinline=""></video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-4" class="section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-6">
+                    <video
+                        src="https://a.slack-edge.com/445abcc/marketing/img/homepage/e2e-prospects/animations/webm/connectedness.IN.webm"
+                        autoplay loop="" muted="" playsinline=""></video>
+                </div>
+                <div class="col-sm-12 col-md-6 align-self-center">
+                    <div class="section-4-text">
+                        <h2>Bring your team together</h2>
+                        <p>At the heart of Slack are channels: organised spaces for everyone and everything that you
+                            need for work. In channels, it’s easier to connect across departments, offices, time zones
+                            and even other companies.</p>
+                        <a href="#">Learn more about channels</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-5" class="section">
+        <div class="container position-relative">
+            <div class="row row-first text-center">
+                <div class="col-12">
+                    <h3 class="mb-4">Teams large and small rely on Slack</h3>
+                    <p class="mb-4">Slack securely scales up to support collaboration at the world’s biggest companies.
+                    </p>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-purple"> MEET SLACK FOR ENTERPRISE</button>
+                    <button class="btn btn-light ms-1"> TALK TO SALES</button>
+                </div>
+            </div>
+            <div class="row row-second">
+
+                <ul>
+                    <li>
+                        <p><span>85%</span></p>
+                        <p class="percent_text">of users say that Slack has improved communication*</p>
+                    </li>
+                    <li>
+                        <p><span>86%</span></p>
+                        <p class="percent_text">feel that their ability to work remotely has improved*</p>
+                    </li>
+                    <li>
+                        <p><span>88%</span></p>
+                        <p class="percent_text">feel more connected to their teams*</p>
+                    </li>
+                </ul>
+
+
+
+
+
+                <!-- <div class="col-12 col-md-4 col-sm-12">
+                    <p><span>85%</span></p>
+                    <p class="percent_text">of users say that Slack has improved communication*</p>
+                </div>
+                <div class="col-12 col-md-4 col-sm-12">
+                    <p><span>86%</span></p>
+                    <p class="percent_text">feel that their ability to work remotely has improved*</p>
+                </div>
+                <div class="col-12 col-md-4 col-sm-12">
+                    <p><span>88%</span></p>
+                    <p class="percent_text">feel more connected to their teams*</p>
+                </div> -->
+            </div>
+            <div class="emoji">
+                <img src="Images/emojis/cool.png" alt="cool emoji" loading="lazy">
+                <img src="Images/emojis/facebook-reactions.png" alt="facebook reactions" loading="lazy">
+                <img src="Images/emojis/graph-report.png" alt="graph" loading="lazy">
+                <img src="Images/emojis/smile.png" alt="smile" loading="lazy">
+                <img src="Images/emojis/web.png" alt="web" loading="lazy">
+                <img src="Images/emojis/smile.png" alt="smile" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section id="section-6" class="section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <video
+                        src="https://a.slack-edge.com/1b4e2a3/marketing/img/homepage/true-prospects/customer-showcase/Vodafone_08.mp4"
+                        autoplay loop="" muted="" playsinline=""></video>
+                </div>
+                <div class="col-12 col-md-6 align-self-center">
+                    <div class="section-6-text">
+                        <p>‘Many technology employees were gravitating naturally to Slack. So we followed our users to
+                            what has become one of our most important tools.’
+                        </p>
+                        <div>
+                            <span> <strong>Matt beal</strong></span> <br>
+                            <span>Director of Technology Strategy and Architecture, Vodafone</span> <br>
+                        </div>
+                        <a href="#">See more customer stories</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row survey-text text-center">
+                <p>* Weighted average. Based on 2,707 survey responses from weekly Slack users in the US,
+                    UK, Australia
+                    and Canada with a ± 2% margin of error at 95% CI (December 2021).</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-7" class="section">
+        <div class="container">
+            <div class="row text-center">
+                <h2>Take a deeper dive into a new way to work</h2>
+            </div>
+            <div class="row p-4">
+                <div class="col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="Images/Card_img_1.png" alt="dreamforce" loading="lazy">
+                            <p class="mb-1">Event</p>
+                            <h3>Read for the future of AI in Slack?</h3>
+                            <a href="">Watch on demand</a>
+                            <span>
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="Images/Card_img_2.jpg" alt="world tour" loading="lazy">
+                            <p class="mb-1">On demand</p>
+                            <h3>Big things are launching. Relieve the highlight of World Tour New York!</h3>
+                            <a href="">Watch now</a>
+                            <span>
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="Images/Card_img_3.jpg" alt="puzzle solving" loading="lazy">
+                            <p class="mb-1">Customer story</p>
+                            <h3>How OpenAI expands ChatGPT with Slack.</h3>
+                            <a href="">Read more</a>
+                            <span>
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 d-flex justify-content-center">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="Images/Card_img_4.jpg" alt="Image showing numbers" loading="lazy">
+                            <p class="mb-1">Webinar</p>
+                            <h3>Top Slack tips to boost productivity</h3>
+                            <a href="">Watch now</a>
+                            <span>
+                                <i class='bx bx-right-arrow-alt'></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-8" class="section">
+        <div class="container">
+            <div class="row text-center">
+                <h3>See all that you can accomplish with Slack</h3>
+                <div class="section-8-btns">
+                    <button class="btn btn-light me-2">TRY FOR FREE</button>
+                    <button class="btn btn-outline-light">TALK TO SALES</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row first-row mb-4">
+                <div class="col-12  col-sm-12 col-md-2">
+                    <img class="slack-logo" src="Images/slack.png" alt="Slack logo" loading="lazy">
+                </div>
+                <div class="col-6 col-sm-6 col-md-2">
+                    <p>Why slack</p>
+                    <ul>
+                        <li><a>Slack vs email</a></li>
+                        <li><a>Channels</a></li>
+                        <li><a>Engagement</a></li>
+                        <li><a>Scale</a></li>
+                        <li><a>Watch the demo</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-6 col-md-2">
+                    <p>Product</p>
+                    <ul>
+                        <li><a>Features</a></li>
+                        <li><a>Integrations</a></li>
+                        <li><a>Enterprise</a></li>
+                        <li><a>Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-6 col-md-2">
+                    <p>Pricing</p>
+                    <ul>
+                        <li><a>Subscriptions</a></li>
+                        <li><a>Paid vs free</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-6 col-md-2">
+                    <p>Resources</p>
+                    <ul>
+                        <li><a>Partners</a></li>
+                        <li><a>Developers</a></li>
+                        <li><a>Community</a></li>
+                        <li><a>Apps</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Help Centre</a></li>
+                        <li><a>Events</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-6 col-md-2">
+                    <p>Company</p>
+                    <ul>
+                        <li><a>About us</a></li>
+                        <li><a>Leadership</a></li>
+                        <li><a>News</a></li>
+                        <li><a>Media kit</a></li>
+                        <li><a>Careers</a></li>
+                        <li><a>Slack shop</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row second-row mt-4">
+                <div class="col-7 col-sm-12 col-md-12 col-lg-12 col-xl-7">
+                    <ul class="footer-links">
+                        <li><a>Status</a></li>
+                        <li><a>Privacy</a></li>
+                        <li><a>Terms</a></li>
+                        <li><a>Your privacy choices</a></li>
+                        <li><a>Cookie preferences</a></li>
+                        <li><a>Contact us</a></li>
+                        <li>
+                            <a class="chng-rgn d-flex justify-content-center"><span><i
+                                        class='bx bx-globe me-1'></i></span>Change
+                                region</a>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="col-5 col-sm-12 col-md-12 col-lg-12 col-xl-5 d-md-flex justify-content-md-end justify-content-sm-start">
+                    <span>
+                        <i class='bx bx-cloud-download me-1'></i>
+                    </span>
+                    <a class="me-4 download-link" href="">Download
+                        Slack</a>
+                    <ul class="social-icons">
+                        <li><a href=""><i class='bx bxl-twitter'></i></a></li>
+                        <li><a href=""><i class='bx bxl-facebook-square'></i></a></li>
+                        <li><a href=""><i class='bx bxl-youtube'></i></a></li>
+                        <li><a href=""><i class='bx bxl-linkedin-square'></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <span>©2023 Slack Technologies, LLC, a Salesforce company. All rights reserved. Various trademarks held by
+                their respective owners.</span>
+        </div>
+    </footer>
+
+    <script>
+
+        // Code for sticky navbar on large screens
+
+        var lastScrollTop;
+        var navbar = document.getElementsByClassName('sticky-nav');
+
+        window.addEventListener('scroll', function () {
+
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop >= 400) {
+
+                document.querySelector('.sticky-nav').classList.add('show');
+            }
+            else {
+                document.querySelector('.sticky-nav').classList.remove('show');
+            }
+
+        });
+    </script>
+
+</body>
+
+</html>
